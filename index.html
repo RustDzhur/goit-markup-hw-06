@@ -62,12 +62,67 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="btn-modal" data-modal-close>
-                        <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"
-                                fill="#000" />
+                        <svg class="icon-close">
+                            <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <!--ФОРМЫ ДЛЯ МОДАЛЬНОГО ОКНА-->
+                    <form class="contact-form">
+                        <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
+
+                        <div class="group-forms">
+                            <label class="form-field">
+                                <p class="name-form">Имя</p>
+                                <div class="icon-position">
+                                    <input class="form-input" type="text" name="user-name" autofocus>
+                                    <svg class="icon-person">
+                                        <use href="./images/icons.svg#icon-person"></use>
+                                    </svg>
+                                </div>
+                            </label>
+
+                            <label class="form-field">
+                                <p class="name-form">Телефон</p>
+                                <div class="icon-position">
+                                    <input class="form-input" type="text" name="user-tel" autofocus>
+                                    <svg class="icon-person">
+                                        <use href="./images/icons.svg#icon-phone-form"></use>
+                                    </svg>
+                                </div>
+                            </label>
+
+                            <label class="form-field">
+                                <p class="name-form">Почта</p>
+                                <div class="icon-position">
+                                    <input class="form-input" type="text" name="user-email" autofocus>
+                                    <svg class="icon-person">
+                                        <use href="./images/icons.svg#icon-email-form"></use>
+                                    </svg>
+                                </div>
+                            </label>
+
+                            <label class="form-textarea">
+                                <p class="name-form">Комментарий</p>
+                                <textarea class="feedback" name="feedback" cols="30" rows="10"
+                                    placeholder="Введите текст"></textarea>
+                            </label>
+                        </div>
+
+                        <label class="agreement">
+                            <div class="icon-agreement">
+                                <input class="agree-btn" type="checkbox" name="user-agreement" autofocus>
+                                <svg class="icon-check">
+                                    <use href="./images/icons.svg#icon-icon-check"></use>
+                                </svg>
+                                <svg class="icon-check-active">
+                                    <use href="./images/icons.svg#icon-icon-check1"></use>
+                                </svg>
+
+                                <p class="discr-agreement">Соглашаюсь с рассылкой и принимаю <a class="terms-agreement" href="">Условия договора</a></p>
+                            </div>
+                        </label>
+                        <button class="submit-btn" type="submit">Отправить</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -387,6 +442,8 @@
                 </address>
             </div>
 
+            <!--Социальные иконки-->
+
             <div class="footer-socials">
                 <p class="footer-social-title">присоединяйтесь</p>
                 <ul class="footer-social-icons">
@@ -420,6 +477,19 @@
                     </li>
                 </ul>
             </div>
+
+            <!--Форма подписки-->
+
+            <label class="subscribe-footer">
+                <p class="discr-subscribe">Подпишитесь на рассылку</p>
+                <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail">
+                <button class="subscribe-btn">
+                    Подписаться
+                    <svg class="subscribe-icon">
+                        <use href="./images/icons.svg#icon-plane"></use>
+                    </svg>
+                </button>
+            </label>
         </div>
     </footer>
 
