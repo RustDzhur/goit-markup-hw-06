@@ -681,9 +681,13 @@ img {
     position: relative;
 }
 
-.agree-btn:checked ~ .icon-border {
+.agree-btn:checked + .icon-border {
     border: none;
 }
+
+/*.agree-btn:focus {
+    border: 2px solid rgb(0, 0, 0);
+}*/
 
 .icon-check-active {
     position: absolute;
