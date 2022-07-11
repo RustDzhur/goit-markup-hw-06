@@ -58,6 +58,8 @@
                 </h1>
                 <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
+        </section>
+        <section class="modal-section">
             <!--Модальное окно-->
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -72,54 +74,52 @@
 
                         <div class="group-forms">
                             <label class="form-field">
-                                <p class="name-form">Имя</p>
-                                <div class="icon-position">
+                                <span class="name-form">Имя</span>
+                                <span class="icon-position">
                                     <input class="form-input" type="text" name="user-name" autofocus>
                                     <svg class="icon-person">
                                         <use href="./images/icons.svg#icon-person"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </label>
 
                             <label class="form-field">
-                                <p class="name-form">Телефон</p>
-                                <div class="icon-position">
+                                <span class="name-form">Телефон</span>
+                                <span class="icon-position">
                                     <input class="form-input" type="text" name="user-tel" autofocus>
                                     <svg class="icon-person">
                                         <use href="./images/icons.svg#icon-phone-form"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </label>
 
                             <label class="form-field">
-                                <p class="name-form">Почта</p>
-                                <div class="icon-position">
+                                <span class="name-form">Почта</span>
+                                <span class="icon-position">
                                     <input class="form-input" type="text" name="user-email" autofocus>
                                     <svg class="icon-person">
                                         <use href="./images/icons.svg#icon-email-form"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </label>
 
-                            <label class="form-textarea">
-                                <p class="name-form">Комментарий</p>
+                            <label class="form-field">
+                                <span class="name-form">Комментарий</span>
                                 <textarea class="feedback" name="feedback" cols="30" rows="10"
                                     placeholder="Введите текст"></textarea>
                             </label>
                         </div>
 
                         <label class="agreement">
-                            <div class="icon-agreement">
-                                <input class="agree-btn" type="checkbox" name="user-agreement" autofocus>
-                                <svg class="icon-check">
-                                    <use href="./images/icons.svg#icon-icon-check"></use>
-                                </svg>
+                            <input class="agree-btn" type="checkbox" name="user-agreement" autofocus>
+                            <span class="icon-border">
                                 <svg class="icon-check-active">
                                     <use href="./images/icons.svg#icon-icon-check1"></use>
                                 </svg>
-
-                                <p class="discr-agreement">Соглашаюсь с рассылкой и принимаю <a class="terms-agreement" href="">Условия договора</a></p>
-                            </div>
+                            </span>
+                            <span class="discr-agreement">Соглашаюсь с рассылкой и принимаю
+                                <a class="terms-agreement" href="">Условия договора</a>
+                            </span>
                         </label>
                         <button class="submit-btn" type="submit">Отправить</button>
                     </form>
@@ -480,16 +480,16 @@
 
             <!--Форма подписки-->
 
-            <label class="subscribe-footer">
+            <form class="subscribe-footer">
                 <p class="discr-subscribe">Подпишитесь на рассылку</p>
                 <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail">
-                <button class="subscribe-btn">
+                <button class="subscribe-btn" type="submit">
                     Подписаться
                     <svg class="subscribe-icon">
                         <use href="./images/icons.svg#icon-plane"></use>
                     </svg>
                 </button>
-            </label>
+            </form>
         </div>
     </footer>
 

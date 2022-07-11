@@ -248,6 +248,7 @@ img {
 
 /*FOOTER*/
 .footer-content {
+    flex-grow: 1;
     margin-right: 70px;
 }
 
@@ -347,10 +348,6 @@ img {
 
 /*---Форма подписки---*/
 
-.subscribe-footer {
-    
-}
-
 .discr-subscribe {
     display: flex;
     align-items: baseline;
@@ -388,13 +385,12 @@ img {
 }
 
 .subscribe-btn {
-    position: relative;
-
-
+    display: inline-flex;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
-    padding-right: 62px;
+    padding-right: 29px;
 
     font-weight: 700;
     font-size: 16px;
@@ -413,13 +409,10 @@ img {
 }
 
 .subscribe-icon {
-    position: absolute;
-    top: 50%;
-    left: 148px;
+    margin-left: 10px;
     width: 24px;
     height: 24px;
     fill: #ffffff;
-    transform: translateY(-50%);
 }
 
 /*----------Страница index.html. Main. Section "HERO"----------*/
@@ -535,23 +528,18 @@ img {
 }
 /*Содержимое формы*/
 .contact-form {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 448px;
+    padding: 40px;
 }
 
 .title-form {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
 
-    padding-top: 40px;
-    align-items: center;
     margin-bottom: 12px;
 }
 
@@ -559,20 +547,31 @@ img {
     margin-bottom: 20px;
 }
 
+.group-forms .form-field {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.16;
+}
+
+.group-forms .form-field:last-child {
+    display: block;
+    margin-bottom: 0;
+}
+
 .name-form {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
-    text-align: left;
 
-    margin-top: 10px;
     margin-bottom: 4px;
 }
 
 
 .form-input {
+    display: inline-block;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
@@ -595,13 +594,11 @@ img {
 
 .icon-person {
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 0;
+    left: 12px;
     width: 18px;
     height: 18px;
     fill: #000000;
-    margin-left: 12px;
-    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -614,6 +611,7 @@ img {
 }
 
 .feedback {
+    display: block;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
@@ -644,7 +642,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin-bottom: 30px;
 }
 
@@ -665,49 +662,54 @@ img {
 }
 
 .discr-agreement {
+    display: block;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-left: 8px;
+    margin-left: 7px;
 }
 
-.icon-check {
-    position: absolute;
-    top: 50%;
-    left: 7px;
+
+.icon-border {
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 3px;
     width: 15px;
     height: 15px;
-    transform: translateY(-50%);
+    position: relative;
 }
+
+.agree-btn:checked ~ .icon-border {
+    border: none;
+}
+
 .icon-check-active {
     position: absolute;
-    top: 50%;
-    left: 7px;
-    width: 15px;
-    height: 15px;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
     opacity: 0;
-    transform: translateY(-50%);
 }
 
-.agree-btn:checked ~ .icon-check-active {
+.agree-btn:checked ~  .icon-border .icon-check-active {
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    border: 1px solid #2196F3;
+    border-radius: 3px;
 }
 
-.agree-btn:focus + .icon-check {
-    fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
 
 .terms-agreement {
     color: rgba(33, 150, 243, 1);
 }
 
 .submit-btn {
+    display: block;
+    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 55px;
