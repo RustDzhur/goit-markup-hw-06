@@ -459,6 +459,10 @@ img {
     border-radius: 4px;
 }
 
+.hero-button:hover {
+    background: rgba(24, 140, 232, 1);
+}
+
 /*-----Modal window-----*/
 .backdrop {
     position: fixed;
@@ -526,6 +530,7 @@ img {
 
     cursor: pointer;
 }
+
 /*Содержимое формы*/
 .contact-form {
     padding: 40px;
