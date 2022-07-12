@@ -690,10 +690,6 @@ img {
     border: none;
 }
 
-/*.agree-btn:focus {
-    border: 2px solid rgb(0, 0, 0);
-}*/
-
 .icon-check-active {
     position: absolute;
     top: 0;
@@ -710,7 +706,9 @@ img {
     border-radius: 3px;
 }
 
-
+/*.agree-btn:focus ~ .icon-check-active {
+    border: 1px solid #2196F3;
+}*/
 
 .terms-agreement {
     color: rgba(33, 150, 243, 1);
